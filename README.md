@@ -69,7 +69,7 @@ git clone https://github.com/ZHKKKe/MODNet modnet_src
 | Argument | Default | Description |
 |---|---|---|
 | --input | required | Directory of input images |
-| --output | required | Output path (.obj or .ply) |
+| --output | required | Output path (.ply) |
 | --quality | medium | Reconstruction quality: low, medium, high |
 | --max-faces | 50000 | Max faces after decimation |
 | --no-gpu | false | Disable GPU |
@@ -78,7 +78,7 @@ git clone https://github.com/ZHKKKe/MODNet modnet_src
 
 ## Benchmarks
 
-Measured on RTX 3080 with 100 input frames:
+Measured on RTX 3080 with 100 images (frames extracted from video):
 
 | Stage | Time |
 |---|---|
@@ -92,7 +92,7 @@ Measured on RTX 3080 with 100 input frames:
 
 ## Output
 
-A .ply or .obj file with up to 50K triangular faces, vertex normals, vertex colors, corrected orientation (Y-up, face-forward), and near-watertight topology.
+A .ply file with up to 50K triangular faces, vertex normals, vertex colors, corrected orientation (Y-up, face-forward).
 
 ## Pipeline
 
@@ -104,7 +104,3 @@ A .ply or .obj file with up to 50K triangular faces, vertex normals, vertex colo
 | Dense | pipeline/dense.py | COLMAP patch-match stereo and fusion |
 | Meshing | pipeline/meshing.py | Poisson surface reconstruction |
 | Post-processing | pipeline/postprocess.py | Shoulder detection, capping, decimation, export |
-
-## Capture guidelines
-
-Best results come from 360 degree coverage at consistent lighting with the subject against a plain background. The pipeline accepts up to 200 images and automatically subsamples to 100 frames to stay within the 5-minute runtime budget on an RTX 3060.
