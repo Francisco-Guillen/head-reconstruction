@@ -186,7 +186,6 @@ class PostProcessStage(Stage):
         mesh_capped.remove_duplicated_vertices()
         mesh_capped.remove_unreferenced_vertices()
         mesh_capped.compute_vertex_normals()
-        print(f"[PostProcess] Watertight: {mesh_capped.is_watertight()}")
         return mesh_capped
 
     def run(self, context: dict) -> dict:
