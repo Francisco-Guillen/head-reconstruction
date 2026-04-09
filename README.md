@@ -5,9 +5,9 @@ A hybrid classical/neural pipeline that reconstructs a watertight 3D head mesh f
 <p align="center">
   <table align="center">
     <tr>
-      <td align="center"><img src="assets/front.png" width="270" alt="Front view"/></td>
-      <td align="center"><img src="assets/side.png" width="270" alt="Side view"/></td>
-      <td align="center"><img src="assets/back.png" width="270" alt="Back view"/></td>
+      <td align="center"><img src="assets/front.png" width="270" alt="Front view."/></td>
+      <td align="center"><img src="assets/side.png" width="270" alt="Side view."/></td>
+      <td align="center"><img src="assets/back.png" width="270" alt="Back view."/></td>
     </tr>
     <tr>
       <td align="center"><em>Front view</em></td>
