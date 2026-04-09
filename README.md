@@ -21,37 +21,37 @@ The pipeline combines MODNet (PyTorch) for foreground segmentation with COLMAP f
 
 ## Quick Start
 
-\`\`\`bash
+```bash
 python run.py --input ./images --output mesh.ply
-\`\`\`
+```
 
 ## Setup
 
 ### 1. System dependencies
 
-\`\`\`bash
+```bash
 sudo apt install colmap
-\`\`\`
+```
 
 ### 2. Python environment
 
-\`\`\`bash
+```bash
 conda env create -f environment.yml
 conda activate head_3d_reconstruction
-\`\`\`
+```
 
 ### 3. MODNet weights
 
-\`\`\`bash
+```bash
 pip install gdown
 gdown 1Nf1ZxeJZJL8Qx9KadcYYyEmmlKhTADxX -O modnet.ckpt
-\`\`\`
+```
 
 ### 4. MODNet source
 
-\`\`\`bash
+```bash
 git clone https://github.com/ZHKKKe/MODNet modnet_src
-\`\`\`
+```
 
 ## Arguments
 
