@@ -12,3 +12,5 @@ dependencies:
       - open3d>=0.17.0
       - pymeshlab>=2022.2
       - gdown>=4.7.0
+      - requests
+      - pysocks
