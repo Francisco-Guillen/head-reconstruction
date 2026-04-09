@@ -57,6 +57,7 @@ conda activate head_3d_reconstruction
 ```
 
 ### 4. MODNet weights
+Download the pretrained checkpoint into the project root directory:
 
 ```bash
 pip install gdown
