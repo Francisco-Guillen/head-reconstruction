@@ -47,7 +47,7 @@ conda create -n head_3d_reconstruction python=3.10 -y
 conda activate head_3d_reconstruction
 
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
-pip install Pillow numpy open3d pymeshlab gdown requests[socks]
+pip install Pillow numpy open3d pymeshlab requests pysocks gdown
 ```
 
 ### 3. Alternative (environment file)
