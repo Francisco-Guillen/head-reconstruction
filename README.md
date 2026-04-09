@@ -67,6 +67,7 @@ gdown 1Nf1ZxeJZJL8Qx9KadcYYyEmmlKhTADxX -O modnet.ckpt
 Weights source: [MODNet pretrained on portrait matting](https://drive.google.com/file/d/1Nf1ZxeJZJL8Qx9KadcYYyEmmlKhTADxX)
 
 ### 5. MODNet source
+Clone the MODNet repository into the project root:
 
 ```bash
 git clone https://github.com/ZHKKKe/MODNet modnet_src
