@@ -41,15 +41,20 @@ python run.py --input ./images --output mesh.ply
 ```bash
 sudo apt install colmap
 ```
-
-### 2. Python environment
-
+### 2. Recommended installation (fast and reliable)
 ```bash
-conda env create -f environment.yml
+conda create -n head_3d_reconstruction python=3.10 -y
+conda activate head_3d_reconstruction
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118 pip install Pillow numpy open3d pymeshlab gdown
+```
+
+### 3. Alternative (environment file)
+```bash
+conda env create -f environment.yml 
 conda activate head_3d_reconstruction
 ```
 
-### 3. MODNet weights
+### 4. MODNet weights
 
 ```bash
 pip install gdown
@@ -58,7 +63,7 @@ gdown 1Nf1ZxeJZJL8Qx9KadcYYyEmmlKhTADxX -O modnet.ckpt
 
 Weights source: [MODNet pretrained on portrait matting](https://drive.google.com/file/d/1Nf1ZxeJZJL8Qx9KadcYYyEmmlKhTADxX)
 
-### 4. MODNet source
+### 5. MODNet source
 
 ```bash
 git clone https://github.com/ZHKKKe/MODNet modnet_src
