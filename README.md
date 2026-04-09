@@ -21,17 +21,18 @@ A hybrid classical/neural pipeline that reconstructs a watertight 3D head mesh f
 
 The pipeline combines MODNet (PyTorch) for foreground segmentation with COLMAP for camera pose estimation and dense multi-view stereo. The resulting point cloud is processed through Poisson Surface Reconstruction to generate a closed mesh. A geometry-based post-processing stage automatically detects the shoulder boundary, caps the open base, fills remaining holes, and decimates to the target face count. The final mesh is exported with vertex normals and corrected orientation.
 
-## Quick Start
-
-```bash
-python run.py --input ./images --output mesh.ply
-```
 ## Dependencies overview
 
 - **PyTorch** — MODNet inference (GPU-accelerated foreground segmentation).
 - **COLMAP** — Structure-from-Motion and Multi-View Stereo.
 - **Open3D** — Poisson Surface Reconstruction and mesh processing.
 - **PyMeshLab** — Hole filling and mesh repair.
+
+## Quick Start
+
+```bash
+python run.py --input ./images --output mesh.ply
+```
 
 ## Setup
 
