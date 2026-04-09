@@ -2,9 +2,14 @@
 
 A hybrid classical/neural pipeline that reconstructs a watertight 3D head mesh from a set of RGB images. Runs fully offline on a single consumer GPU in under 5 minutes.
 
-![Front](assets/front.png)
-![Side](assets/side.png)
-![Back](assets/back.png)
+<p align="center">
+  <img src="assets/front.png" width="30%" alt="Front view."/>
+  <img src="assets/side.png" width="30%" alt="Side view."/>
+  <img src="assets/back.png" width="30%" alt="Back view."/>
+</p>
+<p align="center">
+  <em>Front &nbsp;&nbsp;&nbsp; Side &nbsp;&nbsp;&nbsp; Back</em>
+</p>
 
 ## Approach
 
