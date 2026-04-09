@@ -26,6 +26,12 @@ The pipeline combines MODNet (PyTorch) for foreground segmentation with COLMAP f
 ```bash
 python run.py --input ./images --output mesh.ply
 ```
+## Dependencies overview
+
+- **PyTorch** — MODNet inference (GPU-accelerated foreground segmentation)
+- **COLMAP** — Structure-from-Motion and Multi-View Stereo
+- **Open3D** — Poisson Surface Reconstruction and mesh processing
+- **PyMeshLab** — Hole filling and mesh repair
 
 ## Setup
 
@@ -48,6 +54,8 @@ conda activate head_3d_reconstruction
 pip install gdown
 gdown 1Nf1ZxeJZJL8Qx9KadcYYyEmmlKhTADxX -O modnet.ckpt
 ```
+
+Weights source: [MODNet pretrained on portrait matting](https://drive.google.com/file/d/1Nf1ZxeJZJL8Qx9KadcYYyEmmlKhTADxX)
 
 ### 4. MODNet source
 
@@ -80,8 +88,6 @@ Measured on RTX 3080 with 100 input frames:
 | Poisson meshing | ~13s |
 | Post-processing | ~0.5s |
 | Total | ~186s |
-
-Estimated on RTX 3060: ~260s (~4.3 minutes).
 
 ## Output
 
