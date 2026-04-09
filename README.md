@@ -28,10 +28,10 @@ python run.py --input ./images --output mesh.ply
 ```
 ## Dependencies overview
 
-- **PyTorch** — MODNet inference (GPU-accelerated foreground segmentation)
-- **COLMAP** — Structure-from-Motion and Multi-View Stereo
-- **Open3D** — Poisson Surface Reconstruction and mesh processing
-- **PyMeshLab** — Hole filling and mesh repair
+- **PyTorch** — MODNet inference (GPU-accelerated foreground segmentation).
+- **COLMAP** — Structure-from-Motion and Multi-View Stereo.
+- **Open3D** — Poisson Surface Reconstruction and mesh processing.
+- **PyMeshLab** — Hole filling and mesh repair.
 
 ## Setup
 
