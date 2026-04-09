@@ -1,0 +1,11 @@
+workdir/
+output/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+*.egg-info/
+modnet.ckpt
+modnet_src/
+modnet_src/
+modnet_src/
